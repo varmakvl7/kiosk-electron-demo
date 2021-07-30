@@ -1,12 +1,14 @@
 {
-  "name": "kiosk-electron-demo",
+  "name": "kiosk-test-demo",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "npm i && ./node_modules/.bin/electron-builder --linux --x64"
   },
   "devDependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.1.7",
+    "electron-builder": "^22.10.5"
   }
 }
